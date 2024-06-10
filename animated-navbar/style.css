@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-1: #0f1016;
+  --text-color: #f0f0f0;
+  --accent-color: #006aff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start navbar */
+
+.button1 {
+  border-radius: 50px;
+  width: 150px;
+  height: 30px;
+  background: conic-gradient(at bottom left, deeppink, cyan);
+  color: white;
+  border: none;
+  margin-left: 500px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+h3 {
+  color: var(--color-1);
+  z-index: 10;
+}
+
+html {
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, Tahoma, sans-serif;
+}
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links-container,
+button {
+  margin-left: 150px;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-1);
+  z-index: 10;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav .home-link {
+  margin-right: auto;
+}
+nav svg {
+  fill: var(--color-1);
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+/* end navbar */
+/* start hero for index.html */
+
+.hero-index {
+  display: flex;
+}
+
+.right {
+  width: 50%;
+}
+
+.right-h2 {
+  text-align: center;
+  font-size: 60px;
+  position: relative;
+  top: 25%;
+}
+
+.right-h3 {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 35%;
+}
+
+.right-p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+}
+
+.left {
+  width: 45%;
+}
+
+.left,
+.img-index {
+  height: 500px;
+  width: 995px;
+  border-radius: 150px;
+  margin-top: 15px;
+}
+
+/* end hero for index.html */
+/* start body for index */
+.body{
+  margin-top: 25px;
+}
+
+.body, h6{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.card-wraper{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.body, svg{
+  fill: pink;
+}
+
+.card{
+  background-color: white;
+  padding: 0 10px 0 10px;
+  box-shadow: 1px 0  5px black;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.card, p{
+  margin-top: 15px;
+}
+
+/* end body for index */
+/* start hero for about */
+
+.hero-about{
+  align-items: center;
+}
+
+.img-about{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position : fixed; /*can also use absolute and the parent element can have relative*/
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  z-index: -10;
+}
+
+.about-nav{
+  background-color: #fff;
+}
+
+/* end hero for about */
+/* start body for about */
+
+.body-about{
+  z-index: 10;
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 250px;
+}
+
+.p-about{
+  font-size: 25px;
+  color: #0f1016;
+  background-color: aliceblue;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+/* end body for about */
+/* start blog */
+.button{
+  border-radius: 50px;
+  width: 150px;
+  height: 30px;
+  background: conic-gradient(at bottom left, deeppink, cyan);
+  color: white;
+  border: none;
+  text-decoration: none;
+  z-index: 10;
+}
+/* end blog */
+/* start hero for services */
+
+.hero, h1{
+  text-align: center;
+  margin-top: 115px;
+}
+
+/* end hero for services */
+/* start body for services */
+
+.body-services{
+  margin-top: 200px;
+}
+
+/* end body for services */
+/* start  for caso */
+.caso{
+  background-color: #f0f0f0;
+}
+/* end for caso */
+/* start for contact */
+
+.container{
+  height: 100vh;
+  display: block;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title h2{
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #0f1016;
+  border-radius: 10px;
+}
+
+.contact-input{
+  width: 400px;
+  height: 50px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: grey;
+  border-radius: 50px;
+}
+
+.contact textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.form-button{
+  border-radius: 50px;
+  width: 150px;
+  height: 30px;
+  background: conic-gradient(at bottom left, deeppink, cyan);
+  color: white;
+  border: none;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.contact-input::placeholder{
+  color: lightgray;
+}
+/* end for contact */
+/* start media for hero index */
+@media(max-width: 1164px){
+  .left, img{
+    display: none;
+  }
+
+  .right{
+    width: 100%;
+    z-index: 0;
+  }
+}
+/* end media for hero index  */
+/* start media for body index  */
+@media(max-width: 1164px){
+  .body, h4{
+    margin-top: 150px;
+  }
+  .card-wraper{
+    display: block;
+    width: 50%;
+    margin: 50px auto 0 auto ;
+  }
+}
+/* end media for body index  */
+/* start media for about */
+
+@media(max-width: 1078){
+  .p-about{
+    width: 100%;
+  }
+}
+
+/* end media for about */
+/* start media for navbar */
+@media (max-width: 1301px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+
+    background-color: var(--text-color);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+  }
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  h3 {
+    margin-left: 25px;
+  }
+
+  .button1 {
+    margin: 0 100px 0 0;
+  }
+}
+/* end media for navbar */
+/* start media for contact */
+@media (max-width:426px) {
+  .contact-input{
+    width: 80vw;
+  }
+}
+/* end media for contact */
